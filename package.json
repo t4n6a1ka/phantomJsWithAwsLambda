@@ -16,7 +16,9 @@
   "dependencies": {
     "node-lambda": "0.1.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "phantomjs": ""
+  },
   "scripts": {
     "run": "node run"
   },

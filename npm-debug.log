@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'phantomjs',
+1 verbose cli   '--phantomjs_cdnurl=http://cnpmjs.org/downloads' ]
+2 info using npm@2.13.1
+3 info using node@v0.10.35
+4 verbose install initial load of /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/package.json
+5 warn package.json phantom-lambda-template@0.0.1 license should be a valid SPDX license expression
+6 verbose installManyTop reading scoped package data from /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/node_modules/node-lambda/package.json
+7 verbose installManyTop reading scoped package data from /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/node_modules/phantomjs/package.json
+8 info package.json node-lambda@0.1.5 license should be a valid SPDX license expression
+9 verbose readDependencies loading dependencies from /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/package.json
+10 verbose install phantomjs is installed as 1.9.18
+11 silly cache add args [ 'phantomjs', null ]
+12 verbose cache add spec phantomjs
+13 silly cache add parsed spec { raw: 'phantomjs',
+13 silly cache add   scope: null,
+13 silly cache add   name: null,
+13 silly cache add   rawSpec: 'phantomjs',
+13 silly cache add   spec: '/Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs',
+13 silly cache add   type: 'local' }
+14 silly addLocalTarball shasum (computed) 55b531dbaf999aecf8f77e0104f607490f1f53aa
+15 verbose addTmpTarball /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs not in flight; adding
+16 verbose addTmpTarball validating metadata from /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs
+17 verbose tar unpack /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs
+18 verbose tar unpacking to /var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d
+19 silly gentlyRm /var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d is being purged
+20 verbose gentlyRm don't care about contents; nuking /var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d
+21 silly gunzTarPerm modes [ '755', '644' ]
+22 error not a package /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs
+23 error addLocal Could not install /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template/phantomjs
+24 verbose stack Error: ENOENT, open '/var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d/package.json'
+25 verbose cwd /Users/anupvasudevan/enolaLabs/phantom-lambda-template/phantom-lambda-template
+26 error Darwin 14.4.0
+27 error argv "node" "/usr/local/bin/npm" "install" "phantomjs" "--phantomjs_cdnurl=http://cnpmjs.org/downloads"
+28 error node v0.10.35
+29 error npm  v2.13.1
+30 error path /var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d/package.json
+31 error code ENOENT
+32 error errno 34
+33 error enoent ENOENT, open '/var/folders/x9/t3m_ys8j7kz_qvrbmd2h20n80000gn/T/npm-5398-23b0f7ba/unpack-539453bcf99d/package.json'
+33 error enoent This is most likely not a problem with npm itself
+33 error enoent and is related to npm not being able to find a file.
+34 verbose exit [ 34, true ]

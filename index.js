@@ -31,9 +31,14 @@ exports.handler = function( event, context ) {
   
       console.log('Calling phantom: ', phantomJsPath, childArgs);
       var ls = childProcess.execFile(phantomJsPath, childArgs);
-  
+
+      setTimeout(function () {
+        console.log('Timeout being called ...');
+      }, 1000);
+
       ls.stdout.on('data', function (data) {    // register one or more handlers
         console.log(data);
+        GLOBAL.data = data;
       });
   
       ls.stderr.on('data', function (data) {
@@ -50,6 +55,7 @@ exports.handler = function( event, context ) {
 
   // Execute the phantom call and exit
   callPhantom(function() {
-    context.done();
+    //context.done();
+    context.done(null, {"hi":GLOBAL.data});
   });
 }
