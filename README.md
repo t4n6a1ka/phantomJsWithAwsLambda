@@ -45,4 +45,6 @@ npm install phantomjs --phantomjs_cdnurl=http://cnpmjs.org/downloads
 2. Package for Lambda without the node_modules, then the node script will read from the disk, 
     if node_modules does not exists then read it from the root of the package which will be setup for lambda
 
-
+## Needs to improve
+1. Time taken to generate SVG is now roughly around 20 ms. Need to try to have Phantomjs running as a background service or server. Maybe not using Lambda and 
+using ec2 instead would be a better approach for this? Currently we have to wait atleast 20 seconds to get the entire svg that is generated.
