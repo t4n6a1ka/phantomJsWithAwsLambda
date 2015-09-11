@@ -1,6 +1,6 @@
-# phantom-lambda-template
+# Sensr Data Visualization Server built on phantom-lambda-template
 
-The bare minimum for a [phantomjs](http://phantomjs.org/)app running on [Amazon Lambda](http://aws.amazon.com/lambda/).
+The bare minimum for a [phantomjs](http://phantomjs.org/) app running on [Amazon Lambda](http://aws.amazon.com/lambda/).
 Based off of [node-lambda-template](https://github.com/rebelmail/node-lambda-template)
 
 * Keep in mind that aws-lambda runs on Aws Linux, you will have to make sure your package is compiled for Aws-Linux
@@ -40,8 +40,8 @@ zip -r phantom.zip . --exclude=*.DS_Store* --exclude=*.git* --exclude=*node_modu
 npm install phantomjs --phantomjs_cdnurl=http://cnpmjs.org/downloads
 
 
-## Ideas
-1. install phantom locally using NPM - this will install the phantomjs version for your OS into node_modules
+## Ideas implemented in the code 
+1. Install phantom locally using NPM - this will install the phantomjs version for your OS into node_modules
 2. Package for Lambda without the node_modules, then the node script will read from the disk, 
     if node_modules does not exists then read it from the root of the package which will be setup for lambda
 
