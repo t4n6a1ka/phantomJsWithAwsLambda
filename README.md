@@ -1,4 +1,4 @@
-# Sensr Data Visualization Server built on phantom-lambda-template
+# Node based Data Visualization Server built on phantom-lambda-template
 
 The bare minimum for a [phantomjs](http://phantomjs.org/) app running on [Amazon Lambda](http://aws.amazon.com/lambda/).
 Based off of [node-lambda-template](https://github.com/rebelmail/node-lambda-template)
@@ -46,5 +46,14 @@ npm install phantomjs --phantomjs_cdnurl=http://cnpmjs.org/downloads
     if node_modules does not exists then read it from the root of the package which will be setup for lambda
 
 ## Needs to improve
-1. Time taken to generate SVG is now roughly around 20 ms. Need to try to have Phantomjs running as a background service or server. Maybe not using Lambda and 
-using ec2 instead would be a better approach for this? Currently we have to wait atleast 20 seconds to get the entire svg that is generated.
+1. Need to try with a bigger dataset. 
+2. Need to try to have Phantomjs running as a background service or server. Maybe not using Lambda and 
+using ec2 instead would be a better approach for this? 
+3. Using the cluster api of node and making sure clustering is taking place irrespective of whether its on AWS Lambda or AWS EC2.
+
+
+Here's the output of "time node run.js":
+real	0m11.392s
+user	0m0.758s
+sys	0m0.193s
+
