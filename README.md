@@ -56,5 +56,5 @@ Here's the output of "time node run.js":
 ```
 real	0m11.392s
 user	0m0.758s
-sys	0m0.193s
+sys	    0m0.193s
 ```
